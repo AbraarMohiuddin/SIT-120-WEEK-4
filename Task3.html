@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <title>Task1</title>
+</head>
+
+<body>
+
+    <div id="app"
+        style="padding-bottom: 1%; padding-top: 1%; text-align: center; font-size: 40px; background-color: rgb(205, 205, 80); color: black;">
+        <h1>{{ title }}</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <div class="header">
+        <h1>Unit Site</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#">SIT120</a>
+        <a href="#">SIT232</a>
+        <a href="#">SIT292</a>
+        <a href="#">SIT103</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>Responsive Web Design</h2>
+            <img src="http://d1ttb7iswciaye.cloudfront.net/wp-content/uploads/2013/07/responsive-banner.png" style='height: 50%; width: 50%; object-fit: contain'>
+
+            <h3>Start Learning now!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, non, aperiam cum provident dolorum fugiat
+                eos nam aliquid atque tempora temporibus dicta porro voluptate dolor excepturi qui deleniti vitae
+                molestias?</p>
+
+
+   <div id="app-2" style="padding-bottom: 5%; text-align: center; font-size: 40px; padding-top: 5%;">
+        <span v-bind:title="message">
+            Hover - Let's check when this page was loaded?
+        </span>
+    </div>
+
+    <div id="app-3">
+        <p>{{message}}</p>
+        <button v-on:click="changeMessage">Click me</button>
+        <input v-model="message" type="text" />
+        <br><br>
+      </div>
+
+
+
+
+</body>
+
+</html>
+<script src="./app3.js"></script>

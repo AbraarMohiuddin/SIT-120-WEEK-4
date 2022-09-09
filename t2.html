@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type=text/css>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+    </style>
+    <title>Task2</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="app"
+        style="padding-bottom: 2.5%; padding-top: 2.5%; font-size: 30px; background-color: rgb(226, 208, 105); color: black;">
+        <h1>{{ title }}</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+
+    <!-- v-show -->
+    <br>
+    <h2>Do you enjoy Responsive Web Design?</h2>
+    <div v-show="message" id="app5">Then, Keep Studying!</div>
+
+    <!-- v-for -->
+    <br>
+    <h2>Units this sem: </h2>
+    <div id="app4" style="font-size: 20px;">
+        <ul>
+            <li v-for="item in items">{{ item }}</li>
+        </ul>
+    </div>
+
+    <!-- v-if -->
+    <h2>TASKS REMAINING: </h2>
+    <div id="app1">
+        <p v-if="tasks[0].pending">{{ tasks[0].name }}</p>
+        <p v-if="tasks[1].pending">{{ tasks[1].name }}</p>
+        <p v-if="tasks[2].pending">{{ tasks[2].name }}</p>
+    </div>
+
+
+    <!-- v-else -->
+    <h2>Miss me?</h2>
+    <div id="app3" style="font-size: 20px;">
+
+        <div v-if="Math.random() > 0.3">
+            Here I come :)
+        </div>
+        <div v-else>
+            Will be there soon ;)
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
+<script src="./vue.js"></script>
